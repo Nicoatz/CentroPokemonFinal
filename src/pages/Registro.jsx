@@ -38,7 +38,7 @@ function Registro() {
 
         setPokemons((prevPokemons) => {
             const updatedPokemons = [...prevPokemons, pokemon];
-            windeow.localStorage.setItem('pokemons', JSON.stringify(updatedPokemons));
+            window.localStorage.setItem('pokemons', JSON.stringify(updatedPokemons));
             return updatedPokemons;
         });
 
