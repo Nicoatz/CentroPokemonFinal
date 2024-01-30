@@ -43,7 +43,7 @@ function Registro() {
             window.localStorage.setItem('pokemons', JSON.stringify(updatedPokemons));
             return updatedPokemons;
         });
-        navigate('/home')
+        navigate('/registro')
         limpiarDatos();
     };
 
