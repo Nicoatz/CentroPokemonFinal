@@ -1,0 +1,33 @@
+.mainLogin {
+    width: 30%;
+    background-color: #212529;
+}
+
+@media screen and (max-width: 750px) {
+    .mainLogin {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mainLogin {
+        width: 80%;
+    }
+}
+
+.imgLogin {
+    width: 100%;
+}
+
+.labelLogin {
+    color: white;
+}
+
+.bodyLogin {
+    background-image: url('https://wallpaper.dog/large/20352519.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-position: 50% 50%;
+    min-height: 100vh;
+}
