@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -6,7 +8,7 @@ import DropdownPokemons from '../components/DropdownPokemons';
 import '../css/general.css'
 
 function Registro() {
-
+    const navigate = useNavigate();
     // FORMULARIO
     const [nombreEntrenador, setNombreEntrenador] = useState('');
     const [nombrePokemon, setNombrePokemon] = useState('');
@@ -41,7 +43,7 @@ function Registro() {
             window.localStorage.setItem('pokemons', JSON.stringify(updatedPokemons));
             return updatedPokemons;
         });
-
+        navigate('/home')
         limpiarDatos();
     };
 
